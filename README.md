@@ -4,9 +4,11 @@
 
 ```mermaid
 flowchart TD
-    A[User Input (Query)] --> B[LLM Backbone (Reasoning & Planning)]
-    B --> C[Tool 1: Paper Search]
-    B --> D[Tool 2: PDF/Notes Summarizer]
-    C --> E[Short-Term Memory (Conversation Buffer + Context Recall)]
-    D --> E
-    E --> F[Final Output (Digest + Citations)]
+    A[User Input (Query)] --> B[LLM Backend]
+    B --> C[Tool: Paper Search]
+    B --> D[Tool: PDF Summarizer]
+    C --> E[Results: Papers Found]
+    D --> F[Results: PDF Summary]
+    E --> G[Memory Buffer]
+    F --> G[Memory Buffer]
+    G --> H[Agent Response to User]
