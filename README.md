@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-```mermaid
+(```mermaid
 flowchart TD
     A[User Input (Query)] --> B[LLM Backend]
     B --> C[Tool: Paper Search]
